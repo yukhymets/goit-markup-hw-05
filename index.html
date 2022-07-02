@@ -25,8 +25,8 @@
         </a>
         <nav>
           <ul class="nav">
-            <li class="header-list">
-              <a href="./index.html" class="header-link current-link">Студия</a>
+            <li class="header-list current-link">
+              <a href="./index.html" class="header-link">Студия</a>
             </li>
             <li class="header-list">
               <a href="./portfolio.html" class="header-link">Портфолио</a>
@@ -63,7 +63,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-head">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" data-modal-open class="hero-btn">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="advantages section">
@@ -132,6 +134,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-list-descr">Десктопные приложения</p>
             </li>
             <li class="work-list-item">
               <img
@@ -140,6 +143,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-list-descr">Мобильные приложения</p>
             </li>
             <li class="work-list-item">
               <img
@@ -148,6 +152,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-list-descr">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -595,5 +600,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close tupe="button">
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
